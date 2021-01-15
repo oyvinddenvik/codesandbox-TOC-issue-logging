@@ -1,0 +1,37 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React example starter project",
+  "keywords": [
+    "react",
+    "starter"
+  ],
+  "main": "src/main.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.1",
+    "bootstrap": "4.4.1",
+    "bootstrap-datepicker": "1.9.0",
+    "bootstrap-select": "1.13.14",
+    "eonasdan-bootstrap-datetimepicker": "4.17.47",
+    "jquery": "3.5.1",
+    "popper.js": "1.16.1",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "vue-bootstrap-datetimepicker": "5.0.1"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

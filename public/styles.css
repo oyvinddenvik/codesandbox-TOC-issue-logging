@@ -1,0 +1,126 @@
+/************ TAG selectors ***************/
+
+/**************** Class Selectors***************/
+.active-issue-header {
+  margin-left: 30px;
+}
+
+.active-issue-close-nav {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+}
+
+.button-custom {
+  margin-top: 5px;
+}
+
+.mid-container {
+  margin-top: 200px;
+}
+
+.lower-container {
+  margin-top: 10px;
+}
+
+.modalbox {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(81, 51, 51, 0.5);
+  z-index: 99999;
+  pointer-events: auto;
+  display: none;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modalbox > .dialogbox {
+  max-width: 100%;
+  position: relative;
+  top: 10px;
+  margin: 5% 10%;
+  padding: 5px 20px 13px 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 0 10px #000000;
+  -moz-box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px #000000;
+  display: block;
+  pointer-events: auto;
+}
+
+/* dialogbox >.button-close {
+  position: relative;
+  margin-left: 40px;
+} */
+
+/* #datepicker{width:180px; margin: 0 20px 20px 20px;}
+#datepicker > span:hover{cursor: pointer;} */
+
+.redsquare.fa-square {
+  color: red;
+}
+
+.yellowsquare.fa-square {
+  color: yellow;
+}
+
+.greensquare.fa-square {
+  color: green;
+}
+
+.red.fa-square-full {
+  color: red;
+}
+
+.yellow.fa-square-full {
+  color: yellow;
+}
+
+.green.fa-square-full {
+  color: green;
+}
+
+.action-button {
+  position: relative;
+  bottom: 3px;
+}
+
+.menu-link-color {
+  color: grey;
+}
+
+.menu-link-color:hover {
+  color: white;
+}
+
+.menu-brand-name {
+  text-align: center;
+}
+
+.search-thorvald-menu {
+  margin-top: 15px;
+}
+
+/**************** Test html css***************/
+.delete-issue-button-header {
+  position: absolute;
+  right: 10px;
+}
+
+.close-issue-button-header {
+  position: absolute;
+  right: 120px;
+}
+
+.mechanical-electrical-issues {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
