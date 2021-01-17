@@ -29,7 +29,6 @@ function main() {
       format: "DD/MM/YYYY, HH:mm"
     });
   });
-
   // Handle select and datepicker
   /*
    $(document).ready(function () {

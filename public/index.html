@@ -32,61 +32,57 @@
   </head>
   <body>
     <section>
-      <div class="pos-f-t">
-        <nav class="navbar navbar-dark bg-dark">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <form class="add-issue-menu" action="index.html" method="post">
-            <div class="form-group search-thorvald-menu">
-              <select
-                title="Choose Thorvald robot"
-                class="selectpicker form-control"
-                id="ComponentsProgressIssue"
-                data-live-search="true"
-                data-dropup-auto="false"
-              >
-                <optgroup label="Sylling">
-                  <option>Thorvald 022 </option>
-                  <option>Thorvald xx </option>
-                  <option>Thorvald xx </option>
-                </optgroup>
-                <optgroup label="Kent">
-                  <option>Thorvald xx</option>
-                  <option>Thorvald xx</option>
-                  <option>Thorvald xx</option>
-                </optgroup>
-              </select>
-            </div>
-          </form>
-          <h7 class="text-center"></h7>
-        </nav>
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link menu-link-color" href=""
-                  >Mechanical/electrical issues</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-link-color" href="">Software issues</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-link-color" href="">Field issues</a>
-              </li>
-            </ul>
+      <nav class="navbar fixed-top navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="add-issue-menu" action="index.html" method="post">
+          <div class="form-group search-thorvald-menu">
+            <select
+              title="Choose Thorvald robot"
+              class="selectpicker form-control"
+              id="ComponentsProgressIssue"
+              data-live-search="true"
+              data-dropup-auto="false"
+            >
+              <optgroup label="Sylling">
+                <option>Thorvald 022 </option>
+                <option>Thorvald xx </option>
+                <option>Thorvald xx </option>
+              </optgroup>
+              <optgroup label="Kent">
+                <option>Thorvald xx</option>
+                <option>Thorvald xx</option>
+                <option>Thorvald xx</option>
+              </optgroup>
+            </select>
           </div>
+        </form>
+        <h7 class="text-center"></h7>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link menu-link-color" href=""
+                >Mechanical/electrical issues</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-link-color" href="">Software issues</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-link-color" href="">Field issues</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </section>
 
     <!-- Mechanical and electrical issues -->
@@ -323,6 +319,235 @@
     </section>
 
     <!-- Software issues -->
+    <section>
+      <h2 class="mechanical-electrical-issues">Software issues</h2>
+      <nav class="navbar navbar-expand">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button
+              id="mechanical-electrical-active_issue_btn"
+              class="btn btn-primary btn-sm button-custom button-custom-all"
+              type="button"
+              name="button"
+            >
+              Add issue
+            </button>
+          </li>
+          <li class="nav-item active-issue-header">
+            <h2>Active issues</h2>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Active issue button overlay tab -->
+    <section>
+      <div class="modalbox">
+        <div class="dialogbox">
+          <label>Select Date: </label>
+          <form class="form-inline row">
+            <div class="form-group col-sm-6">
+              <input
+                type="text"
+                class="form-control datetimepicker-input"
+                id="datetimepicker5"
+                data-toggle="datetimepicker"
+                data-target="#datetimepicker5"
+                placeholder="Enter date"
+              />
+            </div>
+          </form>
+          <form class="add-issue-menu" action="index.html" method="post">
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">High level:</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option value="" disabled selected hidden>Choose...</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option disabled>_________</option>
+                <option>Add item</option>
+              </select>
+            </div>
+          </form>
+          <form class="add-issue-menu" action="index.html" method="post">
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Medium level:</label>
+              <select class="form-control" id="exampleFormControlSelect2">
+                <option value="" disabled selected hidden>Choose...</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option disabled>_________</option>
+                <option>Add item</option>
+              </select>
+            </div>
+          </form>
+          <form class="add-issue-menu" action="index.html" method="post">
+            <div class="form-group">
+              <label for="exampleFormControlSelect3">Low level:</label>
+              <select class="form-control" id="exampleFormControlSelect3">
+                <option value="" disabled selected hidden>Choose...</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option disabled>_________</option>
+                <option>Add item</option>
+              </select>
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <label for="DescriptionActiveIssueInput">Description:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="DescriptionActiveIssueInput"
+                placeholder="Enter input here"
+              />
+            </div>
+          </form>
+          <form>
+            <div class="form-group">
+              <label for="causeOfIncident">Cause of incident:</label>
+              <textarea
+                class="form-control"
+                id="causeOfIncident"
+                rows="3"
+                maxlength="300"
+                placeholder="Enter input text here. Max 300 characters "
+              ></textarea>
+            </div>
+          </form>
+          <form class="Picture-video" action="index.html" method="post">
+            <div class="form-group">
+              <label for="video-picture">Picture/video</label>
+              <input type="file" class="form-control-file" id="video-picture" />
+            </div>
+          </form>
+          <form class="add-issue-menu" action="index.html" method="post">
+            <div class="form-group">
+              <label for="exampleFormControlSelect4">Severity</label>
+              <select
+                title="Choose..."
+                class="selectpicker form-control"
+                id="exampleFormControlSelect4"
+              >
+                <option
+                  value="default"
+                  selected="selected"
+                  hidden="true"
+                ></option>
+                <option
+                  value="red"
+                  id="redsevere"
+                  class="redsquare"
+                  data-icon="fas fa-square redsquare"
+                  >Robot not able to do treatment</option
+                >
+                <option
+                  value="yellow"
+                  id="yellowsevere"
+                  data-icon="fas fa-square yellowsquare"
+                  >Robot able to do treatment but with limitations</option
+                >
+                <option
+                  value="green"
+                  id="greensevere"
+                  data-icon="fas fa-square greensquare"
+                  >Robot fully able to do treatment</option
+                >
+              </select>
+            </div>
+          </form>
+          <section class="lower-container-dialogbox">
+            <div class="submit-close-modalbox">
+              <nav class="navbar navbar-expand">
+                <ul class="navbar-nav">
+                  <li class="nav-item active-issue-submit-nav">
+                    <button
+                      id="active-issue-submit-btn"
+                      class="btn btn-primary btn-sm button-submit"
+                      type="button"
+                      name="button"
+                    >
+                      Submit
+                    </button>
+                  </li>
+                  <li class="nav-item active-issue-close-nav">
+                    <button
+                      id="close-active-issue-btn"
+                      class="btn btn-primary btn-sm button-close"
+                      type="button"
+                      name="button"
+                    >
+                      Close
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- Active issue table -->
+    <section>
+      <div class="Active-issue-table">
+        <table class="table" id="activeissuetable">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Action</th>
+              <th scope="col">Date</th>
+              <th scope="col">Description</th>
+              <th scope="col">High level</th>
+              <th scope="col">Medium level</th>
+              <th scope="col">Low level</th>
+              <th scope="col">Severity</th>
+              <th scope="col">Picture/video</th>
+              <th scope="col">Total progress</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Closed issue header -->
+
+    <section class="mid-container">
+      <nav class="navbar navbar-expand">
+        <ul class="navbar-nav">
+          <li class="nav-item closed-issue-header">
+            <h2 class="second-h2">Closed issues</h2>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Closed issue table -->
+
+    <section class="lower-container">
+      <div class="closed-issue-table">
+        <table class="table" id="closedissuetable">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Action</th>
+              <th scope="col">Date</th>
+              <th scope="col">Description</th>
+              <th scope="col">High level</th>
+              <th scope="col">Medium level</th>
+              <th scope="col">Low level</th>
+              <th scope="col">Severity</th>
+              <th scope="col">Picture/video</th>
+              <th scope="col">Final solution (PDF)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

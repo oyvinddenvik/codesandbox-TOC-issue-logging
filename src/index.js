@@ -23,6 +23,9 @@ export function handleClickOfButtons() {
     case constants.ID_OF_ClOSE_PROGRESS_BUTTON:
       handleCloseProgressButton();
       break;
+    case "button-send-to-closed-issues":
+      sendToClosedIssueList(this);
+      break;
     default:
   }
 }
@@ -220,8 +223,8 @@ function buildActiveIssueTableRow(id) {
     '<div class="dropdown-menu" aria-labelledby="first-action-button">' +
     '<button onclick ="editDisplay(this)" class="dropdown-item" type="button">Edit</button>' +
     '<a class="dropdown-item" href="update-page.html">Update issue</a>' +
-    '<button id="button1" class="dropdown-item" onclick="sendToClosedIssueList(this)" type="button">Close issue</button>' +
-    '<button class="dropdown-item" onclick="productDelete(this)" type="button">Delete</button>' +
+    '<button id="button-send-to-closed-issues" class="dropdown-item" type="button">Close issue</button>' +
+    '<button id="button-delete" class="dropdown-item" type="button">Delete</button>' +
     "</div>" +
     "</td>" +
     "<td>" +
